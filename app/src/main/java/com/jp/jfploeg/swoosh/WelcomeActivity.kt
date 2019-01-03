@@ -10,10 +10,13 @@ class WelcomeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
+        //setContentView(R.layout.activity_league)
 
         getStartedBtn.setOnClickListener {
             val leagueIntent = Intent(this, LeagueActivity::class.java)
+            //println ("this seems to be working")
             startActivity(leagueIntent)
+
         }
     }
 }
